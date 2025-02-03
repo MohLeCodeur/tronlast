@@ -1,0 +1,29 @@
+{
+  "name": "@swing.xyz/examples",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "examples/*",
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "lint.fix": "turbo run lint -- --fix && yarn format",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "turbo": "^1.13.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "yarn@4.1.1"
+}

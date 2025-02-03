@@ -1,0 +1,38 @@
+{
+  "name": "swaps-widget-nextjs-pages",
+  "keywords": [
+    "@swing.xyz/ui",
+    "widget",
+    "swaps",
+    "nextjs"
+  ],
+  "license": "MIT",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src",
+    "clean": "rm -rf .next node_modules"
+  },
+  "dependencies": {
+    "@swing.xyz/ui": "^0.53.2",
+    "next": "14.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.4",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-examples": "workspace:*",
+    "pino-pretty": "^10.3.1",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.4",
+    "typescript-config": "workspace:*"
+  }
+}

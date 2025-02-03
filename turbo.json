@@ -1,0 +1,32 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputMode": "new-only",
+      "env": ["NODE_ENV"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "dist/**",
+        ".angular/**",
+        "build/**"
+      ]
+    },
+    "lint": {
+      "outputMode": "new-only",
+      "outputs": []
+    },
+    "test": {},
+    "start": {
+      "dependsOn": ["build"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}
